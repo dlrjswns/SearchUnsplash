@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Toast_Swift
+import Alamofire
 
 class RootViewController:UIViewController{
+    var item = [ImageItem]()
     lazy var imageView:UIImageView={
        let imageView = UIImageView()
         imageView.image = UIImage(named: "image1.png")
@@ -19,7 +22,12 @@ class RootViewController:UIViewController{
     }()
     
     lazy var segmentControl:UISegmentedControl={
-       let segment = UISegmentedControl(items: ["사진검색", "사용자검색"])
+       let segment = UISegmentedControl(items: ["사진 키워드", "사용자 입력"])
+        segment.addTarget(self, action: #selector(segmentTapped), for: UIControl.Event.valueChanged)
+        segment.setImage(UIImage(systemName: "person.fill"), forSegmentAt: 1)
+        segment.setImage(UIImage(systemName: "photo.fill"), forSegmentAt: 0)
+        segment.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        segment.selectedSegmentIndex = 0 //Segment0 Tapped When StartProject
         return segment
     }()
     
@@ -44,6 +52,7 @@ class RootViewController:UIViewController{
         button.layer.borderColor = UIColor.systemGray.cgColor
         button.layer.borderWidth = 5
         button.isHidden = true
+        button.addTarget(self, action: #selector(goToVC), for: UIControl.Event.touchUpInside)
         return button
     }()
     
@@ -53,6 +62,29 @@ class RootViewController:UIViewController{
         keyboardMoveWhenTapped()
         keyboardHideWhenTapped()
         self.textField.delegate = self
+        callAPI(query: "Cat")
+    }
+    //MARK: -Objc
+    @objc func segmentTapped(_ sender:UISegmentedControl){
+        switch sender.selectedSegmentIndex{
+        case 0:
+            textField.placeholder = "사진 키워드 입력"
+        case 1:
+            textField.placeholder = "사용자 이름 입력"
+        default:
+            print("segmentTapped()")
+        }
+    }
+    
+    @objc func goToVC(){
+        if segmentControl.selectedSegmentIndex == 0{
+            self.present(ImageViewController(), animated: true, completion: nil)
+        }else if segmentControl.selectedSegmentIndex == 1{
+            self.present(PersonViewController(), animated: true, completion: nil)
+        }else{
+            makeCustomToast(message: "무엇을 검색할까요?", title: "알림", imageName: "alarm.png")
+        }
+        
     }
     
     //MARK: -Configure
@@ -80,6 +112,27 @@ class RootViewController:UIViewController{
         button.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 20).isActive = true
     }
     
+    func callAPI(query:String){
+        let urI = "\(API.BASE_URL)search/photos?query=\(query)&client_id=\(API.CLIENT_ID)"
+        let urL:URL! = URL(string: urI)
+        let apiData = try! Data(contentsOf: urL)
+        
+        do{
+            let apiDictionary = try JSONSerialization.jsonObject(with: apiData, options: []) as! NSDictionary
+            let results = apiDictionary["results"] as! NSArray
+            
+            for a in results{
+               let urls = a as! NSDictionary
+               let thumb = urls["urls"] as! NSDictionary
+               let thumbURL = thumb["thumb"] as! String
+                let url:URL! = URL(string: thumbURL)
+               let data = try! Data(contentsOf: url)
+                let item = ImageItem()
+                item.image = UIImage(data: data)
+                item.append(item)
+            }
+        }catch{}
+    }
 }
 
 extension RootViewController:UITextFieldDelegate{
@@ -89,7 +142,14 @@ extension RootViewController:UITextFieldDelegate{
         }else if textField.text?.count == 1 && string.count == 0{
             button.isHidden = true
         }
-        return true
+        
+        let count = textField.text!.count + string.count
+        if count>12{
+            makeCustomToast(message: "12자만 입력가능합니다", title: "알림", imageName: "alarm.png")
+            return false
+        }else{
+            return true
+        }
         
     }
 }

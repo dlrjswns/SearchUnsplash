@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17695D5E15763F3F6ADB8FC8 /* Pods_UnplashSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058C91898520EEC14B41ADD8 /* Pods_UnplashSearchTests.framework */; };
 		702E9B642723344B008CA43B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9B632723344B008CA43B /* AppDelegate.swift */; };
 		702E9B662723344B008CA43B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9B652723344B008CA43B /* SceneDelegate.swift */; };
 		702E9B6B2723344B008CA43B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702E9B692723344B008CA43B /* Main.storyboard */; };
@@ -18,6 +19,14 @@
 		702E9B9A272335C3008CA43B /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 702E9B99272335C3008CA43B /* image1.png */; };
 		702E9B9C27233B3E008CA43B /* search.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 702E9B9B27233B3E008CA43B /* search.jpeg */; };
 		702E9B9F27233DC9008CA43B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9B9E27233DC9008CA43B /* Extension.swift */; };
+		702E9BA127247415008CA43B /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 702E9BA027247415008CA43B /* alarm.png */; };
+		702E9BA3272475FC008CA43B /* alarm1.png in Resources */ = {isa = PBXBuildFile; fileRef = 702E9BA2272475FC008CA43B /* alarm1.png */; };
+		702E9BA5272481DB008CA43B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9BA4272481DB008CA43B /* ImageViewController.swift */; };
+		702E9BA72724820A008CA43B /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9BA62724820A008CA43B /* PersonViewController.swift */; };
+		702E9BAA2724A369008CA43B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9BA92724A369008CA43B /* Constants.swift */; };
+		702E9BAD2724AE20008CA43B /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9BAC2724AE20008CA43B /* ImageItem.swift */; };
+		D89D6CEC174D38D71499C3B7 /* Pods_UnplashSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDE9ACD11738A9B1B5D7EB6 /* Pods_UnplashSearch.framework */; };
+		E2BACFFD031F8A03C6B4E451 /* Pods_UnplashSearch_UnplashSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAD86994FE8D39BB15034FA /* Pods_UnplashSearch_UnplashSearchUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		058C91898520EEC14B41ADD8 /* Pods_UnplashSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnplashSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A650DC912FFF25D867E55AC /* Pods-UnplashSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnplashSearch.release.xcconfig"; path = "Target Support Files/Pods-UnplashSearch/Pods-UnplashSearch.release.xcconfig"; sourceTree = "<group>"; };
+		60034203C982E7C85D114F5D /* Pods-UnplashSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnplashSearch.debug.xcconfig"; path = "Target Support Files/Pods-UnplashSearch/Pods-UnplashSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		64BAAB319202B786E147C4F2 /* Pods-UnplashSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnplashSearchTests.release.xcconfig"; path = "Target Support Files/Pods-UnplashSearchTests/Pods-UnplashSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DAD8CF287A3CA5E2C9F047C /* Pods-UnplashSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnplashSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-UnplashSearchTests/Pods-UnplashSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		702E9B602723344B008CA43B /* UnplashSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnplashSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		702E9B632723344B008CA43B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		702E9B652723344B008CA43B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +69,16 @@
 		702E9B99272335C3008CA43B /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		702E9B9B27233B3E008CA43B /* search.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = search.jpeg; sourceTree = "<group>"; };
 		702E9B9E27233DC9008CA43B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		702E9BA027247415008CA43B /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		702E9BA2272475FC008CA43B /* alarm1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm1.png; sourceTree = "<group>"; };
+		702E9BA4272481DB008CA43B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		702E9BA62724820A008CA43B /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		702E9BA92724A369008CA43B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		702E9BAC2724AE20008CA43B /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		7EAD86994FE8D39BB15034FA /* Pods_UnplashSearch_UnplashSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnplashSearch_UnplashSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B38BF6F63E3C8CC7173988 /* Pods-UnplashSearch-UnplashSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnplashSearch-UnplashSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-UnplashSearch-UnplashSearchUITests/Pods-UnplashSearch-UnplashSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC896E99357E050E492C6B83 /* Pods-UnplashSearch-UnplashSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnplashSearch-UnplashSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-UnplashSearch-UnplashSearchUITests/Pods-UnplashSearch-UnplashSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FFDE9ACD11738A9B1B5D7EB6 /* Pods_UnplashSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnplashSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89D6CEC174D38D71499C3B7 /* Pods_UnplashSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17695D5E15763F3F6ADB8FC8 /* Pods_UnplashSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,15 +102,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2BACFFD031F8A03C6B4E451 /* Pods_UnplashSearch_UnplashSearchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25C6898D2012DBEC87BC81A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60034203C982E7C85D114F5D /* Pods-UnplashSearch.debug.xcconfig */,
+				5A650DC912FFF25D867E55AC /* Pods-UnplashSearch.release.xcconfig */,
+				83B38BF6F63E3C8CC7173988 /* Pods-UnplashSearch-UnplashSearchUITests.debug.xcconfig */,
+				CC896E99357E050E492C6B83 /* Pods-UnplashSearch-UnplashSearchUITests.release.xcconfig */,
+				6DAD8CF287A3CA5E2C9F047C /* Pods-UnplashSearchTests.debug.xcconfig */,
+				64BAAB319202B786E147C4F2 /* Pods-UnplashSearchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		53EDAFD573EDB7E0D64471DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFDE9ACD11738A9B1B5D7EB6 /* Pods_UnplashSearch.framework */,
+				7EAD86994FE8D39BB15034FA /* Pods_UnplashSearch_UnplashSearchUITests.framework */,
+				058C91898520EEC14B41ADD8 /* Pods_UnplashSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		702E9B572723344B008CA43B = {
 			isa = PBXGroup;
 			children = (
+				702E9BAB2724AE16008CA43B /* Models */,
+				702E9BA82724A33B008CA43B /* Utils */,
 				702E9B9D27233DBA008CA43B /* Extensions */,
 				702E9B9627233551008CA43B /* Images */,
 				702E9B93272334D7008CA43B /* Controllers */,
@@ -92,6 +144,8 @@
 				702E9B792723344D008CA43B /* UnplashSearchTests */,
 				702E9B842723344D008CA43B /* UnplashSearchUITests */,
 				702E9B612723344B008CA43B /* Products */,
+				25C6898D2012DBEC87BC81A1 /* Pods */,
+				53EDAFD573EDB7E0D64471DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				702E9B94272334E3008CA43B /* RootViewController.swift */,
+				702E9BA4272481DB008CA43B /* ImageViewController.swift */,
+				702E9BA62724820A008CA43B /* PersonViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +203,8 @@
 		702E9B9627233551008CA43B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				702E9BA2272475FC008CA43B /* alarm1.png */,
+				702E9BA027247415008CA43B /* alarm.png */,
 				702E9B9B27233B3E008CA43B /* search.jpeg */,
 				702E9B99272335C3008CA43B /* image1.png */,
 			);
@@ -161,6 +219,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		702E9BA82724A33B008CA43B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				702E9BA92724A369008CA43B /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		702E9BAB2724AE16008CA43B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				702E9BAC2724AE20008CA43B /* ImageItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 702E9B8A2723344D008CA43B /* Build configuration list for PBXNativeTarget "UnplashSearch" */;
 			buildPhases = (
+				D5CC610577D5D1BD225D86E8 /* [CP] Check Pods Manifest.lock */,
 				702E9B5C2723344B008CA43B /* Sources */,
 				702E9B5D2723344B008CA43B /* Frameworks */,
 				702E9B5E2723344B008CA43B /* Resources */,
+				2F6A810D71B0B374D0B79C8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 702E9B8D2723344D008CA43B /* Build configuration list for PBXNativeTarget "UnplashSearchTests" */;
 			buildPhases = (
+				026F24DC244F189A652DBE40 /* [CP] Check Pods Manifest.lock */,
 				702E9B722723344D008CA43B /* Sources */,
 				702E9B732723344D008CA43B /* Frameworks */,
 				702E9B742723344D008CA43B /* Resources */,
@@ -203,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 702E9B902723344D008CA43B /* Build configuration list for PBXNativeTarget "UnplashSearchUITests" */;
 			buildPhases = (
+				1BD3901CA44F5C611EA5E321 /* [CP] Check Pods Manifest.lock */,
 				702E9B7D2723344D008CA43B /* Sources */,
 				702E9B7E2723344D008CA43B /* Frameworks */,
 				702E9B7F2723344D008CA43B /* Resources */,
+				40745B4F8C8C5869305237FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,6 +348,8 @@
 				702E9B9A272335C3008CA43B /* image1.png in Resources */,
 				702E9B6D2723344D008CA43B /* Assets.xcassets in Resources */,
 				702E9B6B2723344B008CA43B /* Main.storyboard in Resources */,
+				702E9BA3272475FC008CA43B /* alarm1.png in Resources */,
+				702E9BA127247415008CA43B /* alarm.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,13 +369,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		026F24DC244F189A652DBE40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnplashSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BD3901CA44F5C611EA5E321 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnplashSearch-UnplashSearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F6A810D71B0B374D0B79C8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnplashSearch/Pods-UnplashSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnplashSearch/Pods-UnplashSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnplashSearch/Pods-UnplashSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40745B4F8C8C5869305237FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnplashSearch-UnplashSearchUITests/Pods-UnplashSearch-UnplashSearchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnplashSearch-UnplashSearchUITests/Pods-UnplashSearch-UnplashSearchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnplashSearch-UnplashSearchUITests/Pods-UnplashSearch-UnplashSearchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5CC610577D5D1BD225D86E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnplashSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		702E9B5C2723344B008CA43B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				702E9B642723344B008CA43B /* AppDelegate.swift in Sources */,
+				702E9BA72724820A008CA43B /* PersonViewController.swift in Sources */,
 				702E9B662723344B008CA43B /* SceneDelegate.swift in Sources */,
+				702E9BA5272481DB008CA43B /* ImageViewController.swift in Sources */,
+				702E9BAD2724AE20008CA43B /* ImageItem.swift in Sources */,
+				702E9BAA2724A369008CA43B /* Constants.swift in Sources */,
 				702E9B95272334E3008CA43B /* RootViewController.swift in Sources */,
 				702E9B9F27233DC9008CA43B /* Extension.swift in Sources */,
 			);
@@ -469,6 +657,7 @@
 		};
 		702E9B8B2723344D008CA43B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60034203C982E7C85D114F5D /* Pods-UnplashSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -487,6 +676,7 @@
 		};
 		702E9B8C2723344D008CA43B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A650DC912FFF25D867E55AC /* Pods-UnplashSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -505,6 +695,7 @@
 		};
 		702E9B8E2723344D008CA43B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DAD8CF287A3CA5E2C9F047C /* Pods-UnplashSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +717,7 @@
 		};
 		702E9B8F2723344D008CA43B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64BAAB319202B786E147C4F2 /* Pods-UnplashSearchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +739,7 @@
 		};
 		702E9B912723344D008CA43B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B38BF6F63E3C8CC7173988 /* Pods-UnplashSearch-UnplashSearchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -566,6 +759,7 @@
 		};
 		702E9B922723344D008CA43B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC896E99357E050E492C6B83 /* Pods-UnplashSearch-UnplashSearchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

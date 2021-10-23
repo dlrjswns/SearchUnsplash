@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Toast_Swift
 extension UITextField{
     func addLeftImage(image:UIImage){
         let imageView = UIImageView(image: image)
@@ -18,6 +18,15 @@ extension UITextField{
 }
 
 extension UIViewController{
+    func makeCustomToast(message:String, title:String, imageName:String){
+        var style = ToastStyle()
+        style.backgroundColor = .white
+        style.titleColor = .black
+        style.titleFont = UIFont.boldSystemFont(ofSize: 20)
+        style.messageColor = .black
+        style.titleAlignment = .center
+        self.view.makeToast(message, duration: 1.0, position: .center, title: title, image: UIImage(named: imageName), style: style, completion: nil)
+    }
     @objc func keyboardWillShow(notification:NSNotification){
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue{
             if self.view.frame.origin.y == 0{

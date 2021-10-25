@@ -10,7 +10,8 @@ import Toast_Swift
 import Alamofire
 
 class RootViewController:UIViewController{
-    var item = [ImageItem]()
+    static var item = [ImageItem]()
+    
     lazy var imageView:UIImageView={
        let imageView = UIImageView()
         imageView.image = UIImage(named: "image1.png")
@@ -62,7 +63,7 @@ class RootViewController:UIViewController{
         keyboardMoveWhenTapped()
         keyboardHideWhenTapped()
         self.textField.delegate = self
-        callAPI(query: "Cat")
+//        callAPI(query: "Cat")
     }
     //MARK: -Objc
     @objc func segmentTapped(_ sender:UISegmentedControl){
@@ -77,8 +78,11 @@ class RootViewController:UIViewController{
     }
     
     @objc func goToVC(){
+        guard let text = textField.text else{return}
         if segmentControl.selectedSegmentIndex == 0{
-            self.present(ImageViewController(), animated: true, completion: nil)
+            callAPI(query: text)
+            self.present(ImageViewController(collectionViewLayout: UICollectionViewFlowLayout()), animated: true, completion: nil)
+            print("ImageViewController()")
         }else if segmentControl.selectedSegmentIndex == 1{
             self.present(PersonViewController(), animated: true, completion: nil)
         }else{
@@ -113,6 +117,7 @@ class RootViewController:UIViewController{
     }
     
     func callAPI(query:String){
+      
         let urI = "\(API.BASE_URL)search/photos?query=\(query)&client_id=\(API.CLIENT_ID)"
         let urL:URL! = URL(string: urI)
         let apiData = try! Data(contentsOf: urL)
@@ -120,18 +125,17 @@ class RootViewController:UIViewController{
         do{
             let apiDictionary = try JSONSerialization.jsonObject(with: apiData, options: []) as! NSDictionary
             let results = apiDictionary["results"] as! NSArray
-            
             for a in results{
                let urls = a as! NSDictionary
                let thumb = urls["urls"] as! NSDictionary
-               let thumbURL = thumb["thumb"] as! String
+                let thumbURL = thumb["thumb"] as! String
                 let url:URL! = URL(string: thumbURL)
                let data = try! Data(contentsOf: url)
                 let item = ImageItem()
                 item.image = UIImage(data: data)
-                item.append(item)
+                RootViewController.item.append(item)
             }
-        }catch{}
+        }catch{print("실패")}
     }
 }
 

@@ -25,6 +25,7 @@
 		702E9BA72724820A008CA43B /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9BA62724820A008CA43B /* PersonViewController.swift */; };
 		702E9BAA2724A369008CA43B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9BA92724A369008CA43B /* Constants.swift */; };
 		702E9BAD2724AE20008CA43B /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9BAC2724AE20008CA43B /* ImageItem.swift */; };
+		702E9BB02726662F008CA43B /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9BAF2726662F008CA43B /* CollectionCell.swift */; };
 		D89D6CEC174D38D71499C3B7 /* Pods_UnplashSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDE9ACD11738A9B1B5D7EB6 /* Pods_UnplashSearch.framework */; };
 		E2BACFFD031F8A03C6B4E451 /* Pods_UnplashSearch_UnplashSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAD86994FE8D39BB15034FA /* Pods_UnplashSearch_UnplashSearchUITests.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		702E9BA62724820A008CA43B /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		702E9BA92724A369008CA43B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		702E9BAC2724AE20008CA43B /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		702E9BAF2726662F008CA43B /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		7EAD86994FE8D39BB15034FA /* Pods_UnplashSearch_UnplashSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnplashSearch_UnplashSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B38BF6F63E3C8CC7173988 /* Pods-UnplashSearch-UnplashSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnplashSearch-UnplashSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-UnplashSearch-UnplashSearchUITests/Pods-UnplashSearch-UnplashSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC896E99357E050E492C6B83 /* Pods-UnplashSearch-UnplashSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnplashSearch-UnplashSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-UnplashSearch-UnplashSearchUITests/Pods-UnplashSearch-UnplashSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		702E9B572723344B008CA43B = {
 			isa = PBXGroup;
 			children = (
+				702E9BAE27266624008CA43B /* Cells */,
 				702E9BAB2724AE16008CA43B /* Models */,
 				702E9BA82724A33B008CA43B /* Utils */,
 				702E9B9D27233DBA008CA43B /* Extensions */,
@@ -233,6 +236,14 @@
 				702E9BAC2724AE20008CA43B /* ImageItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		702E9BAE27266624008CA43B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				702E9BAF2726662F008CA43B /* CollectionCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +490,7 @@
 			files = (
 				702E9B642723344B008CA43B /* AppDelegate.swift in Sources */,
 				702E9BA72724820A008CA43B /* PersonViewController.swift in Sources */,
+				702E9BB02726662F008CA43B /* CollectionCell.swift in Sources */,
 				702E9B662723344B008CA43B /* SceneDelegate.swift in Sources */,
 				702E9BA5272481DB008CA43B /* ImageViewController.swift in Sources */,
 				702E9BAD2724AE20008CA43B /* ImageItem.swift in Sources */,
